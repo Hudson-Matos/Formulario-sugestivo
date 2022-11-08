@@ -63,7 +63,7 @@ body {
     flex-direction: column;
     border: 1px solid #0099ff;
     padding: 7px 100px;
-    display: none;
+    /*display: none;*/
 }
 #box_senha :first-child {
     color: #333;

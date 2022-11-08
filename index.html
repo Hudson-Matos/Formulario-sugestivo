@@ -12,7 +12,7 @@
         <div class="container_cadastro">
             <h1>Crie Sua conta</h1>
             <p>Registre-se para obter total experiência</p>
-            <form action="">
+            <form action="#">
                 <div class="input_box">
                     <label for="username">Nome</label>
                     <input type="text" id="username" name="name" placeholder="Degite seu nome">
@@ -26,10 +26,30 @@
                     <input type="password" id="password" name="password" placeholder="Digite sua senha">
                 </div>
                 <div id="box_sugestao">
-                    <p>Quer uma ajuda para criar uma senha segura?<span id="btn_gerar_senha"> Clique aqui.</span></p>
+                    <p>Quer uma ajuda para criar uma senha segura?<span> Clique aqui.</span></p>
+                    <div class="container_ajuste">
+                        <div class="box_caracteres">
+                            <p>quantidade de caracteres <span id="span"></span></p>
+                            <input id="slider" type="range" min="6" max="15" value="10">
+                        </div>
+                        <div class="box_opcao">
+                            <label for="cbox1">Letras:</label>
+                            <input id="cbox1" type="checkbox" class="requerido" checked>
+                        </div>
+                        <div class="box_opcao">
+                            <label for="cbox2">Números:</label>
+                            <input id="cbox2" type="checkbox">
+                        </div>
+                        <div class="box_opcao">
+                            <label for="cbox3">Simbolos:</label>
+                            <input id="cbox3" type="checkbox">
+                        </div>
+                        <button id="btn_gerar_senha">Gerar senha</button>
+                    </div>
                     <div id="box_senha">
                         <p>Senha gerada</p>
-                        <p style="font-weight: bold; text-align: center;"></p>
+                        <p id="senha_gerada" style="font-weight: bold; text-align: center;"></p>
+                        <button id="btn_copiar">Copiar</button>
                     </div>
                 </div>
                 <div class="input_box">
@@ -40,9 +60,6 @@
             </form>
         </div>
     </div>
-
-
-
     <script src="./scripts.js"></script>
 </body>
 </html>
