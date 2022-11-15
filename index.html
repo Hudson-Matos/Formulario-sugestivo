@@ -26,8 +26,8 @@
                     <input type="password" id="password" name="password" placeholder="Digite sua senha">
                 </div>
                 <div id="box_sugestao">
-                    <p>Quer uma ajuda para criar uma senha segura?<span> Clique aqui.</span></p>
-                    <div class="container_ajuste">
+                    <p>Quer uma ajuda para criar uma senha segura?<span id="span_sugestivo"> Clique aqui.</span></p>
+                    <div class="container_ajuste" style="display: none;">
                         <div class="box_caracteres">
                             <p>quantidade de caracteres <span id="span"></span></p>
                             <input id="slider" type="range" min="6" max="15" value="10">
@@ -46,9 +46,9 @@
                         </div>
                         <button id="btn_gerar_senha">Gerar senha</button>
                     </div>
-                    <div id="box_senha">
+                    <div id="box_senha" style="display: none;">
                         <p>Senha gerada</p>
-                        <p id="senha_gerada" style="font-weight: bold; text-align: center;"></p>
+                        <p id="senha_gerada" style="font-weight: bold; text-align: center;">teste</p>
                         <button id="btn_copiar">Copiar</button>
                     </div>
                 </div>

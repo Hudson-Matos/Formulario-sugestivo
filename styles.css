@@ -6,7 +6,7 @@
 }
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,15 +58,65 @@ body {
 #box_sugestao p > span:hover{
     color: #0099ff;
 }
+.container_ajuste {
+    border: 1px solid #0099ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 7px;
+}
+.box_caracteres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+.box_opcao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 200px;
+}
+.box_opcao > input {
+    width: 15px;
+}
+#btn_gerar_senha {
+    background-color: #81d340;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+}
 #box_senha {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: 1px solid #0099ff;
-    padding: 7px 100px;
+    width: 300px;
+    padding: 5px 
     /*display: none;*/
 }
 #box_senha :first-child {
     color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#btn_copiar {
+    background-color: #81d340;
+    color: white;
+    width: 90px;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 #btn_cadastrar {
@@ -83,3 +133,5 @@ body {
 #btn_cadastrar:hover {
     opacity: 1;
 }
+
+
