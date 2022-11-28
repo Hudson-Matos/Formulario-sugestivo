@@ -13,6 +13,7 @@ body {
     align-items: center;
 }
 .container_cadastro {
+    background-color: #fff;
     max-width: 500px; 
     padding: 25px 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
