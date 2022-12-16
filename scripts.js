@@ -8,8 +8,11 @@ const cbox3 = document.querySelector("#cbox3");
 const slider = document.querySelector("#slider");
 const span = document.querySelector("#span");
 const btnCopiar = document.querySelector("#btn_copiar")
+const btnDeletar = document.querySelector(".bi");
 
-spanSugestivo.addEventListener("click", () => {containerAjuste.style.display = "flex";})
+spanSugestivo.addEventListener("click", () => {
+    containerAjuste.style.display = "flex";
+    document.querySelector("body").style.height = "130vh"; })
 
 span.innerHTML = slider.value;
 span.value = slider.value;
@@ -42,6 +45,13 @@ btnCopiar.addEventListener('click', (event) => {
     event.preventDefault();
     navigator.clipboard.writeText(senhaGerada.innerHTML);
     btnCopiar.innerHTML = "copiado";
+})
+
+btnDeletar.addEventListener("click", ()=>{
+    btnDeletar.parentElement.style.display = "none";
+    document.querySelector("#box_senha").style.display="none";
+    document.querySelector("body").style.height = "100vh";
+
 })
 
 function verificarCbox() {
