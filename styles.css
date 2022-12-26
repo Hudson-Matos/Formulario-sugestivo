@@ -18,6 +18,7 @@ body {
     padding: 25px 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    position: relative;
 }
 .container_cadastro > h1 {
     text-align: center;
@@ -69,7 +70,6 @@ body {
     padding: 5px;
     width: 300px;
     margin-bottom: 7px;
-    position: relative;
 }
 .container_ajuste i {
     position: absolute;
@@ -136,13 +136,14 @@ body {
     cursor: pointer;
 }
 #btn_cadastrar {
+    margin-left: 300px;
+    right: 20px;
     background:#6c63ff;
     padding: 15px 25px;
     font-size: 16px;
     color: #fff;
     border: none;
     border-radius: 7px;
-    margin-left: 300px;
     cursor: pointer;
     opacity: 0.9;
 }
@@ -150,4 +151,13 @@ body {
     opacity: 1;
 }
 
+@media screen and (max-width: 530px) {
+    .container_cadastro {
+        width: 90%;
+        height: 100vh;
+    }
+    #btn_cadastrar {
+        margin-left: 250px;
+    }
+}
 
