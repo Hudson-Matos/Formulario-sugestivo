@@ -151,15 +151,6 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 530px) {
-    .container_cadastro {
-        width: 90%;
-        height: 100vh;
-    }
-    #btn_cadastrar {
-        margin-left: 250px;
-    }
-}
 @media screen and (max-width: 455px) {
     .container_cadastro {
         width: 100%;
