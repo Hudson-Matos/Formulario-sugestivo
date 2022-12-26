@@ -18,7 +18,6 @@ body {
     padding: 25px 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    position: relative;
 }
 .container_cadastro > h1 {
     text-align: center;
@@ -62,6 +61,7 @@ body {
     color: #0099ff;
 }
 .container_ajuste {
+    position: relative;
     border: 1px solid #0099ff;
     display: flex;
     justify-content: center;
