@@ -78,6 +78,7 @@ body {
 }
 .bi-x-lg:hover{
     background-color: grey;
+    padding: 4px 4px;
     opacity: 0.8;
     color: #fff;
     cursor: pointer;
